@@ -30,105 +30,105 @@
 
 </header>
 
-<section>
-	<h3>Plan Your Trip to Tigray!</h3>
-	<p>Planning a trip to Tigray? Let us help you make the most of your visit! Fill out the form below to receive personalized
-	travel recommendations, itinerary suggestions, and more!</p>
-</section>
+<div class="trip-container">
+	<section class="intro-section">
+		<h2 class="content-header">Plan Your Trip to Tigray!</h2>
+		<p class="intro-text">Planning a trip to Tigray? Let us help you make the most of your visit! Fill out the form below to receive personalized
+		travel recommendations, itinerary suggestions, and more!</p>
+	</section>
 	
-<form>
-            <h3>Personal Information</h3>
-	
-	<div>
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" required>
-            </div>
+	<form class="form">
+		<div class="form-section">
+			<h3 class="content-header">Personal Information</h3>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
 	  
-	<div>	  
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required>
-	</div>
+			<div class="form-group">	  
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
 	
-	<div>    
-		<label for="country">Country of Origin:</label>
-		<input type="text" id="country" name="country" required>
-	</div>
+			<div class="form-group">    
+				<label for="country">Country of Origin:</label>
+				<input type="text" id="country" name="country" required>
+			</div>
+		</div>
 	    
-	    
-            <h3>Travel Details</h3>
-            <div>
-		<label for="travel-dates">Planned Travel Dates:</label>
-		<input type="date" id="travel-dates" name="travel-dates" required>
-            </div>
+		<div class="form-section">
+			<h3 class="content-header">Travel Details</h3>
+			<div class="form-group">
+				<label for="travel-dates">Planned Travel Dates:</label>
+				<input type="date" id="travel-dates" name="travel-dates" required>
+			</div>
 	
-	<div>
-		<label for="num-travelers">Number of Travelers:</label>
-		<input type="number" id="num-travelers" name="num-travelers" min="1" required>
-            </div>
+			<div class="form-group">
+				<label for="num-travelers">Number of Travelers:</label>
+				<input type="number" id="num-travelers" name="num-travelers" min="1" required>
+			</div>
 	    
-	 <div>   
-		<label>Select the attractions you're most interested in visiting:</label>
-            
-		<div>
-			<input type="checkbox" id="attraction1" name="attractions" value="attraction1">
-			<label for="attraction1">Historical Sites</label>
-		</div>
-	    
-		<div>
-			<input type="checkbox" id="attraction2" name="attractions" value="attraction2">
-			<label for="attraction2">Natural Landscapes</label>
-		</div>
-	
-		<div>
-			<input type="checkbox" id="attraction3" name="attractions" value="attraction3">
-			<label for="attraction3">Cultural Experiences</label>
-		</div>
-	 </div> 
-	 
-	<div> 
-		<label>Will this be your first time visiting Tigray?</label>
-	   
-		<div>
-			<input type="radio" id="yes" name="first-time" value="yes">
-			<label for="yes">Yes</label>
-		</div>
-	
-		<div>	   
-			<input type="radio" id="no" name="first-time" value="no">
-			<label for="no">No</label>
-		</div>
-	</div>
-	
-	 <div>
-		<label for="special-requirements">Special Requirements:</label>
-		<div>
-			<textarea id="special-requirements" name="special-requirements" rows="4" placeholder="Include any dietary restrictions, accessibility needs or other requests"></textarea>
-		</div>
-	</div>
-	    
-	<div>
-		<label for="hear-about">How did you hear about Tigray?</label>
-		<div>
-			<input type="text" id="hear-about" name="hear-about">
-		</div>
-	</div>
-	    
-	<div>
-		<label for="comments">Additional Comments or Questions:</label>
-		<div>
-			<textarea id="comments" name="comments" rows="4"></textarea>
-		</div>
-	 </div> 
-	 
-            <div>
-		<input type="checkbox" id="consent" name="consent" required>
-		<label for="consent">I agree to be contacted with personalized travel recommendations.</label>
-            </div>
-            
-            <input type="submit" value="Submit Form">
-        
-	</form>
+			<div class="form-group checkbox-group">
+				<label class="group-label">Select the attractions you're most interested in visiting:</label>
+				<div class="checkbox-options">
+					<div class="checkbox-item">
+						<input type="checkbox" id="attraction1" name="attractions" value="attraction1">
+						<label for="attraction1">Historical Sites</label>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" id="attraction2" name="attractions" value="attraction2">
+						<label for="attraction2">Natural Landscapes</label>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" id="attraction3" name="attractions" value="attraction3">
+						<label for="attraction3">Cultural Experiences</label>
+					</div>
+				</div>
+			</div>
 
+			<div class="form-group radio-group">
+				<label class="group-label">Will this be your first time visiting Tigray?</label>
+					<div class="radio-options">
+						<div class="radio-item">
+							<input type="radio" id="yes" name="first-time" value="yes">
+							<label for="yes">Yes</label>
+						</div>
+						<div class="radio-item">
+							<input type="radio" id="no" name="first-time" value="no">
+							<label for="no">No</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-section">
+				<h3 class="content-header">Additional Information</h3>
+				<div class="form-group">
+					<label for="special-requirements">Special Requirements:</label>
+					<textarea id="special-requirements" name="special-requirements" rows="4" placeholder="Include any dietary restrictions, accessibility needs or other requests"></textarea>
+				</div>
+
+				<div class="form-group">
+					<label for="hear-about">How did you hear about Tigray?</label>
+					<input type="text" id="hear-about" name="hear-about">
+				</div>
+
+				<div class="form-group">
+					<label for="comments">Additional Comments or Questions:</label>
+					<textarea id="comments" name="comments" rows="4"></textarea>
+				</div>
+			</div>
+
+			<div class="form-section">
+				<div class="consent-group">
+					<input type="checkbox" id="consent" name="consent" required>
+					<label for="consent">I agree to be contacted with personalized travel recommendations.</label>
+				</div>
+
+				<button type="submit" class="submit-button">Submit Form</button>
+			</div>
+		</form>
+	</div>
 
 
 </body>
