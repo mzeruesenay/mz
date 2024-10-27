@@ -1,8 +1,296 @@
-h1 {
-  font-family: 'Cinzel', serif;
-  color: #DCD7C9;
-  font-size: 16px;
-  position: relative;
-  text-transform: uppercase;
+header {
+	background-color: #8B0000;
+	margin: 0;
+	/*Removes the default margins*/
 }
-    
+
+header h1{
+	font-family: 'Georgia', serif;
+	font-size: 2.5em;
+	color: white;
+	text-transform: uppercase;
+	/*Makes text fully uppercase*/
+	letter-spacing: 4px;
+	/*Spaces the letters out (W3schools)*/
+	text-align: center;
+	/*This centers the h1 text*/
+	padding: 20px;
+	/*Adds padding around the h1 text*/
+	margin: 0;
+	/*Removes the default margin*/
+}
+
+nav {
+    background-color: #CD5C5C;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav ul li {
+	font-size: 18px;
+	display: inline-block;
+	/*Displays list items horizontally instead of vertically*/
+	padding: 20px 15px;
+	/*Adds padding around the list items*/
+}
+
+nav ul li a {
+	text-decoration: none;
+	/*Takes away the default underline on links*/
+	color: white;
+	font-weight: bold;
+	padding: 1rem;
+	/*Adds padding around the list items*/
+}
+
+nav ul li a:hover {
+	color: #FFE4E1;
+	background-color: #8B0000;
+}
+
+.text-section {
+	line-height: 2;
+	/*Adds spacing in between lines of text*/
+	padding: 20px;
+	/*Adds padding around text section*/
+}
+	
+	
+.content-wrapper {
+	overflow: hidden;
+	/*Hides the content if content overflows past element size*/
+	margin: 20px;
+	/*Adds space around the whole section*/
+}
+
+.left_images {
+	float: left;
+	/*Floats image to the left of the page*/
+	margin-right: 20px;
+	/*Adds space between the image and the text*/
+	margin-bottom: 10px;
+	/*Adds space below the image*/
+	padding: 3px;
+	/*Adds padding around the image*/
+	border: 3px solid #8B0000;
+}
+
+
+#first {
+	border-bottom: 2px solid #8B0000;
+	/*Adds a line under the paragraph that is 2px and dark red*/
+	padding: 10px 0px 30px 10px;
+	/*Adds space around the text paragraph*/
+}
+	
+.content-header {
+	color: #8B0000;
+	font-family: 'Georgia', serif;
+	margin-bottom: 15px;
+	/*Gives space between the title of the section and the text*/
+	border-bottom: 2px solid #8B0000;
+	/*Adds a line under that is 2px and dark red*/
+	text-align: center;
+}
+
+body {
+	background-color: #FEE7CD;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+#tigraymap {
+	width: 550px;
+	height: 350px;
+}
+
+#axumitemap {
+	width: 400px;
+	height: 350px;
+}	
+
+.attractions-container {
+    max-width: 1200px;
+	/* Sets maximum width of the container */
+    margin: 0 auto;
+	/* Centers the container horizontally */
+    padding: 20px;
+	/* Adds space around the content */
+    display: grid;
+	/* Enables CSS Grid layout */
+    grid-template-columns: repeat(2, 1fr); 
+	/* Creates 2 equal columns */
+    gap: 30px; 
+	/* Adds space between grid items */
+}
+
+.attraction {
+    margin-bottom: 0; 
+	/* Removes bottom margin since grid gap is already being used */
+    padding: 20px;
+	/* Adds space inside each box */
+    border: 1px solid #DDD;
+	/* Adds a light gray border */
+    border-radius: 8px;
+	/* Rounds the corners of the boxes */
+    background-color: #FFF;
+	/* Sets white background */
+}
+
+.image-container {
+    text-align: center;
+	/* Centers the image horizontally */
+    margin-bottom: 20px;
+	/* Adds space between image and text */
+}
+
+.image-container img {
+    max-width: 100%;
+	/* Makes image full width of container */
+    height: auto;
+	/* Maintains image ratio */
+    border-radius: 4px;
+	/* Slightly rounds image corners */
+}
+
+.text-container {
+    text-align: left;
+	/* Aligns text to the left */
+    padding: 0 15px;
+	/* Adds horizontal padding to text */
+}
+
+.text-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+	/* Space between heading and paragraph */
+    font-size: 1.5em;
+	/* Makes heading larger than normal text */
+}
+
+.text-container p {
+    line-height: 1.6;
+	/* Increases line spacing */
+    color: #444;
+}
+.trip-container {
+    max-width: 800px;         
+	/* Limits width to 800px */
+    margin: 0 auto;            
+	/* Centers the container horizontally */
+    padding: 20px;             
+	/* Adds space around all sides of container */
+}
+
+.intro-section {
+    text-align: center;        
+	/* Centers all text content */
+    margin-bottom: 40px;       
+	/* Adds space below this section */
+    padding: 20px;            
+	/* Adds internal spacing */
+}
+
+.intro-text {
+    font-size: 1.1em;        
+    line-height: 1.6;         
+	/* Adds spacing between lines */
+}
+
+.form {
+    background-color: #FFF;    
+	/* White background for the form */
+    padding: 30px;             
+	/* Adds internal spacing */
+    border-radius: 8px;        
+	/* Rounds the corners of the form */
+}
+
+.form-section {
+    margin-bottom: 30px;       
+	/* Adds space between form sections */
+    padding-bottom: 20px;      
+	/* Adds padding at bottom of sections */
+}
+
+.form-group {
+    margin-bottom: 20px;       
+	/* Adds space between form groups */
+}
+
+label {
+    display: block;            
+	/* Makes labels appear on their own line */
+    margin-bottom: 8px;        
+	/* Adds space below labels */
+}
+
+.group-label {
+    margin-bottom: 15px;       
+	/* Adds space below group headers */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 100%;              
+	/* Makes inputs full width of container */
+    padding: 10px;            
+	/* Adds internal spacing in inputs */
+    border: 1px solid #DDD;   
+	/* Light gray border */
+    border-radius: 4px;       
+	/* Slightly rounds corners */
+    font-size: 16px;         
+}
+
+.checkbox-group, .radio-group {
+    margin-bottom: 25px;      
+	/* Adds space below checkbox/radio groups */
+}
+
+.checkbox-options, .radio-options {
+    display: flex;            
+	/* Uses flexbox for layout */
+    flex-direction: column;   
+	/* Stacks options vertically */
+    gap: 10px;               
+	/* Adds consistent spacing between options */
+}
+
+.checkbox-item,
+.radio-item {
+    display: flex;           
+	/* Uses flexbox for layout */
+    align-items: center;     
+	/* Vertically centers checkbox/label */
+    gap: 10px;              
+	/* Space between checkbox and label */
+}
+
+.checkbox-item label, .radio-item label {
+    margin-bottom: 0;        
+	/* Removes default margin */
+}
+
+.consent-group {
+    display: flex;           
+	/* Uses flexbox for layout */
+    align-items: center;     
+	/* Vertically centers items */
+    gap: 10px;              
+	/* Space between checkbox and text */
+    margin-bottom: 20px;     
+	/* Space below consent group */
+}
+
+.consent-group label {
+    margin-bottom: 0;        
+	/* Removes default margin */
+}
